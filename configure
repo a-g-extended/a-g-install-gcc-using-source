@@ -1,0 +1,3335 @@
+ac_subst_vars='EXEEXT
+LDFLAGS
+CFLAGS
+CPPFLAGS
+CC
+DEFS
+bindir
+prefix
+srcdir
+'
+if test -n ""; then
+ac_possible_subst_vars='LTLIBOBJS
+LIBOBJS
+compare_exclusions
+stage2_werror_flag
+stage1_checking
+stage1_cflags
+MAINT
+MAINTAINER_MODE_FALSE
+MAINTAINER_MODE_TRUE
+COMPILER_NM_FOR_TARGET
+COMPILER_LD_FOR_TARGET
+COMPILER_AS_FOR_TARGET
+FLAGS_FOR_TARGET
+RAW_CXX_FOR_TARGET
+WINDMC_FOR_TARGET
+WINDRES_FOR_TARGET
+STRIP_FOR_TARGET
+READELF_FOR_TARGET
+RANLIB_FOR_TARGET
+OTOOL_FOR_TARGET
+OBJDUMP_FOR_TARGET
+OBJCOPY_FOR_TARGET
+NM_FOR_TARGET
+LIPO_FOR_TARGET
+LD_FOR_TARGET
+DSYMUTIL_FOR_TARGET
+DLLTOOL_FOR_TARGET
+AS_FOR_TARGET
+AR_FOR_TARGET
+GDC_FOR_TARGET
+GOC_FOR_TARGET
+GFORTRAN_FOR_TARGET
+GCC_FOR_TARGET
+CXX_FOR_TARGET
+CC_FOR_TARGET
+GDCFLAGS
+READELF
+OTOOL
+OBJDUMP
+OBJCOPY
+WINDMC
+WINDRES
+STRIP
+RANLIB
+NM
+LIPO
+LD
+DSYMUTIL
+DLLTOOL
+AS
+AR
+RUNTEST
+EXPECT
+MAKEINFO
+FLEX
+LEX
+M4
+BISON
+YACC
+WINDRES_FOR_BUILD
+WINDMC_FOR_BUILD
+RANLIB_FOR_BUILD
+NM_FOR_BUILD
+LD_FOR_BUILD
+LDFLAGS_FOR_BUILD
+GDC_FOR_BUILD
+GOC_FOR_BUILD
+GFORTRAN_FOR_BUILD
+DSYMUTIL_FOR_BUILD
+DLLTOOL_FOR_BUILD
+CXX_FOR_BUILD
+CXXFLAGS_FOR_BUILD
+CPPFLAGS_FOR_BUILD
+CPP_FOR_BUILD
+CFLAGS_FOR_BUILD
+CC_FOR_BUILD
+AS_FOR_BUILD
+AR_FOR_BUILD
+target_configdirs
+configdirs
+build_configdirs
+INSTALL_GDB_TK
+GDB_TK
+CONFIGURE_GDB_TK
+build_tooldir
+tooldir
+GCC_SHLIB_SUBDIR
+RPATH_ENVVAR
+target_configargs
+host_configargs
+build_configargs
+BUILD_CONFIG
+LDFLAGS_FOR_TARGET
+CXXFLAGS_FOR_TARGET
+CFLAGS_FOR_TARGET
+DEBUG_PREFIX_CFLAGS_FOR_TARGET
+SYSROOT_CFLAGS_FOR_TARGET
+get_gcc_base_ver
+extra_host_zlib_configure_flags
+extra_host_libiberty_configure_flags
+stage1_languages
+host_shared
+extra_linker_plugin_flags
+extra_linker_plugin_configure_flags
+islinc
+isllibs
+poststage1_ldflags
+poststage1_libs
+stage1_ldflags
+stage1_libs
+extra_isl_gmp_configure_flags
+extra_mpc_mpfr_configure_flags
+extra_mpc_gmp_configure_flags
+extra_mpfr_configure_flags
+gmpinc
+gmplibs
+PGO_BUILD_LTO_CFLAGS
+PGO_BUILD_USE_CFLAGS
+PGO_BUILD_GEN_CFLAGS
+HAVE_CXX11_FOR_BUILD
+HAVE_CXX11
+do_compare
+GDC
+GNATMAKE
+GNATBIND
+ac_ct_CXX
+CXXFLAGS
+CXX
+OBJEXT
+EXEEXT
+ac_ct_CC
+CPPFLAGS
+LDFLAGS
+CFLAGS
+CC
+extra_liboffloadmic_configure_flags
+target_subdir
+host_subdir
+build_subdir
+build_libsubdir
+AWK
+SED
+LN_S
+LN
+INSTALL_DATA
+INSTALL_SCRIPT
+INSTALL_PROGRAM
+target_os
+target_vendor
+target_cpu
+target
+host_os
+host_vendor
+host_cpu
+host
+target_noncanonical
+host_noncanonical
+build_noncanonical
+build_os
+build_vendor
+build_cpu
+build
+TOPLEVEL_CONFIGURE_ARGUMENTS
+target_alias
+host_alias
+build_alias
+LIBS
+ECHO_T
+ECHO_N
+ECHO_C
+DEFS
+mandir
+localedir
+libdir
+psdir
+pdfdir
+dvidir
+htmldir
+infodir
+docdir
+oldincludedir
+includedir
+localstatedir
+sharedstatedir
+sysconfdir
+datadir
+datarootdir
+libexecdir
+sbindir
+bindir
+program_transform_name
+prefix
+exec_prefix
+PACKAGE_URL
+PACKAGE_BUGREPORT
+PACKAGE_STRING
+PACKAGE_VERSION
+PACKAGE_TARNAME
+PACKAGE_NAME
+PATH_SEPARATOR
+SHELL'
+fi
+: "${SHELL=sh}"
+as_echo='printf %s\n'
+as_echo_n='printf %s'
+as_me=$(basename -- "$0" ||
+expr X/"$0" : '.*/\([^/][^/]*\)/*$' \| \
+         X"$0" : 'X\(//\)$' \| \
+         X"$0" : 'X\(/\)' \| . 2>/dev/null ||
+$as_echo X/"$0" |
+  sed '/^.*\/\([^/][^/]*\)\/*$/{
+          s//\1/
+          q
+       }
+       /^X\/\(\/\/\)$/{
+          s//\1/
+          q
+       }
+       /^X\/\(\/\).*/{
+          s//\1/
+          q
+       }
+       s/.*/./; q')
+realpath ()
+{
+  test -d "$1" && printf %s\\n $(cd "$1" && pwd) && return $?
+  test -e "$1" && printf %s\\n $(cd "$(dirname $1)" && printf %s\\n "$(pwd)/$(basename $1)")
+  return $?
+}
+as_fn_set_status ()
+{
+  return $1
+}
+as_fn_exit ()
+{
+  set +e
+  as_fn_set_status $1
+  exit $1
+}
+as_fn_error ()
+{
+  as_status=$1
+  test "$as_status" -eq 0 && as_status=1
+  if test $4; then
+    as_lineno=${as_lineno-"$3"} as_lineno_stack=as_lineno_stack=$as_lineno_stack
+    $as_echo "$as_me:${as_lineno-$LINENO}: error: $2" >&$4
+  fi
+  $as_echo "$as_me: error: $2" >&2
+  as_fn_exit "$as_status"
+}
+as_fn_executable_p ()
+{
+  test -f "$1" && test -x "$1"
+}
+ac_pwd=$(pwd)
+as_cr_letters='abcdefghijklmnopqrstuvwxyz'
+as_cr_LETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+as_cr_Letters=$as_cr_letters$as_cr_LETTERS
+as_cr_digits='0123456789'
+as_cr_alnum=$as_cr_Letters$as_cr_digits
+ac_option_pos=0
+ac_prev=
+ac_dashdash=
+for ac_option
+do
+  ac_option_args="$ac_option_args \"$ac_option\""
+  if test -n "$ac_prev"; then
+    eval $ac_prev=\$ac_option
+    ac_prev=
+    continue
+  fi
+  case $ac_option in
+    *=?*)
+      ac_optarg=$(expr "X$ac_option" : '[^=]*=\(.*\)')
+      ;;
+    *=)
+      ac_optarg=
+      ;;
+    *)
+      ac_optarg=yes
+      ;;
+  esac
+  case $ac_dashdash$ac_option in
+    --)
+      ac_dashdash=yes ;;
+    -*=*)
+      ac_option=$(printf "%s\n" $ac_option | sed 's/_/__/g
+                                                  s/-/_d/g')
+      ac_envvar=$(expr "x$ac_option" : 'x\([^=]*\)=')
+      case $ac_envvar in
+        '' | [0-9]* | *[!_$as_cr_alnum]*)
+          as_fn_error $? "invalid variable name: \`$ac_envvar'"
+          ;;
+      esac
+      eval ac_option_set$ac_envvar=\$ac_option_pos
+      eval ac_option_val$ac_envvar=\$ac_optarg
+      ;;
+    -*)
+      ac_option=$(printf "%s\n" $ac_option | sed 's/_/__/g
+                                                  s/-/_d/g')
+      case $ac_option in
+        '' | [0-9]* | *[!_$as_cr_alnum]*)
+          as_fn_error $? "invalid option: \`$ac_option'"
+          ;;
+      esac
+      eval ac_option_set$ac_option=\$ac_option_pos
+      ;;
+    *=*)
+      ac_envvar=$(expr "x$ac_option" : 'x\([^=]*\)=')
+      case $ac_envvar in
+        '' | [0-9]* | *[!$as_cr_alnum]*)
+          as_fn_error $? "invalid variable name: \`$ac_envvar'"
+          ;;
+      esac
+      eval $ac_envvar=\$ac_optarg
+      export $ac_envvar
+      ;;
+    *)
+      $as_echo "$as_me: WARNING: you should use --build, --host, --target" >&2
+      : "${build_alias=$ac_option} ${host_alias=$ac_option} ${target_alias=$ac_option}"
+      ;;
+  esac
+  ac_option_pos=$((ac_option_pos+1))
+done
+if test -n "$ac_option_set_dbindir$ac_option_set_d_dbindir$ac_option_set_d_dbindi$ac_option_set_d_dbind$ac_option_set_d_dbin$ac_option_set_d_dbi"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dbindir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dbindir; then
+        ac_site_file1=$ac_option_set_dbindir
+        ac_site_file2=_dbindir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dbindir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dbindir; then
+        ac_site_file1=$ac_option_set_d_dbindir
+        ac_site_file2=_d_dbindir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dbindi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dbindi; then
+        ac_site_file1=$ac_option_set_d_dbindi
+        ac_site_file2=_d_dbindi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dbind in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dbind; then
+        ac_site_file1=$ac_option_set_d_dbind
+        ac_site_file2=_d_dbind
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dbin in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dbin; then
+        ac_site_file1=$ac_option_set_d_dbin
+        ac_site_file2=_d_dbin
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dbi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dbi; then
+        ac_site_file1=$ac_option_set_d_dbi
+        ac_site_file2=_d_dbi
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval bindir=\${ac_option_val$ac_site_file2-\$bindir}
+  fi
+fi
+if test -n "$ac_option_set_dbuild$ac_option_set_d_dbuild$ac_option_set_d_dbuil$ac_option_set_d_dbui$ac_option_set_d_dbu"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dbuild in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dbuild; then
+        ac_site_file1=$ac_option_set_dbuild
+        ac_site_file2=_dbuild
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dbuild in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dbuild; then
+        ac_site_file1=$ac_option_set_d_dbuild
+        ac_site_file2=_d_dbuild
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dbuil in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dbuil; then
+        ac_site_file1=$ac_option_set_d_dbuil
+        ac_site_file2=_d_dbuil
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dbui in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dbui; then
+        ac_site_file1=$ac_option_set_d_dbui
+        ac_site_file2=_d_dbui
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dbu in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dbu; then
+        ac_site_file1=$ac_option_set_d_dbu
+        ac_site_file2=_d_dbu
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval build_alias=\${ac_option_val$ac_site_file2-\$build_alias}
+  fi
+fi
+if test -n "$ac_option_set_dcache_dfile$ac_option_set_d_dcache_dfile$ac_option_set_d_dcache_dfil$ac_option_set_d_dcache_dfi$ac_option_set_d_dcache_df$ac_option_set_d_dcache_d$ac_option_set_d_dcache$ac_option_set_d_dcach$ac_option_set_d_dcac$ac_option_set_d_dca$ac_option_set_d_dc"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dcache_dfile in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dcache_dfile; then
+        ac_site_file1=$ac_option_set_dcache_dfile
+        ac_site_file2=_dcache_dfile
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dcache_dfile in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dcache_dfile; then
+        ac_site_file1=$ac_option_set_d_dcache_dfile
+        ac_site_file2=_d_dcache_dfile
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dcache_dfil in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dcache_dfil; then
+        ac_site_file1=$ac_option_set_d_dcache_dfil
+        ac_site_file2=_d_dcache_dfil
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dcache_dfi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dcache_dfi; then
+        ac_site_file1=$ac_option_set_d_dcache_dfi
+        ac_site_file2=_d_dcache_dfi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dcache_df in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dcache_df; then
+        ac_site_file1=$ac_option_set_d_dcache_df
+        ac_site_file2=_d_dcache_df
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dcache_d in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dcache_d; then
+        ac_site_file1=$ac_option_set_d_dcache_d
+        ac_site_file2=_d_dcache_d
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dcache in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dcache; then
+        ac_site_file1=$ac_option_set_d_dcache
+        ac_site_file2=_d_dcache
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dcach in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dcach; then
+        ac_site_file1=$ac_option_set_d_dcach
+        ac_site_file2=_d_dcach
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dcac in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dcac; then
+        ac_site_file1=$ac_option_set_d_dcac
+        ac_site_file2=_d_dcac
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dca in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dca; then
+        ac_site_file1=$ac_option_set_d_dca
+        ac_site_file2=_d_dca
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dc in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dc; then
+        ac_site_file1=$ac_option_set_d_dc
+        ac_site_file2=_d_dc
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval cache_file=\${ac_option_val$ac_site_file2-\$cache_file}
+  fi
+fi
+if test -n "$ac_option_set_ddatadir$ac_option_set_d_ddatadir$ac_option_set_d_ddatadi$ac_option_set_d_ddatad"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_ddatadir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_ddatadir; then
+        ac_site_file1=$ac_option_set_ddatadir
+        ac_site_file2=_ddatadir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddatadir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddatadir; then
+        ac_site_file1=$ac_option_set_d_ddatadir
+        ac_site_file2=_d_ddatadir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddatadi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddatadi; then
+        ac_site_file1=$ac_option_set_d_ddatadi
+        ac_site_file2=_d_ddatadi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddatad in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddatad; then
+        ac_site_file1=$ac_option_set_d_ddatad
+        ac_site_file2=_d_ddatad
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval datadir=\${ac_option_val$ac_site_file2-\$datadir}
+  fi
+fi
+if test -n "$ac_option_set_ddatarootdir$ac_option_set_d_ddatarootdir$ac_option_set_d_ddatarootdi$ac_option_set_d_ddatarootd$ac_option_set_d_ddataroot$ac_option_set_d_ddataroo$ac_option_set_d_ddataro$ac_option_set_d_ddatar"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_ddatarootdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_ddatarootdir; then
+        ac_site_file1=$ac_option_set_ddatarootdir
+        ac_site_file2=_ddatarootdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddatarootdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddatarootdir; then
+        ac_site_file1=$ac_option_set_d_ddatarootdir
+        ac_site_file2=_d_ddatarootdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddatarootdi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddatarootdi; then
+        ac_site_file1=$ac_option_set_d_ddatarootdi
+        ac_site_file2=_d_ddatarootdi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddatarootd in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddatarootd; then
+        ac_site_file1=$ac_option_set_d_ddatarootd
+        ac_site_file2=_d_ddatarootd
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddataroot in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddataroot; then
+        ac_site_file1=$ac_option_set_d_ddataroot
+        ac_site_file2=_d_ddataroot
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddataroo in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddataroo; then
+        ac_site_file1=$ac_option_set_d_ddataroo
+        ac_site_file2=_d_ddataroo
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddataro in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddataro; then
+        ac_site_file1=$ac_option_set_d_ddataro
+        ac_site_file2=_d_ddataro
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddatar in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddatar; then
+        ac_site_file1=$ac_option_set_d_ddatar
+        ac_site_file2=_d_ddatar
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval datarootdir=\${ac_option_val$ac_site_file2-\$datarootdir}
+  fi
+fi
+if test -n "$ac_option_set_ddocdir$ac_option_set_d_ddocdir$ac_option_set_d_ddocdi$ac_option_set_d_ddoc$ac_option_set_d_ddo"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_ddocdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_ddocdir; then
+        ac_site_file1=$ac_option_set_ddocdir
+        ac_site_file2=_ddocdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddocdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddocdir; then
+        ac_site_file1=$ac_option_set_d_ddocdir
+        ac_site_file2=_d_ddocdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddocdi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddocdi; then
+        ac_site_file1=$ac_option_set_d_ddocdi
+        ac_site_file2=_d_ddocdi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddoc in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddoc; then
+        ac_site_file1=$ac_option_set_d_ddoc
+        ac_site_file2=_d_ddoc
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddo in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddo; then
+        ac_site_file1=$ac_option_set_d_ddo
+        ac_site_file2=_d_ddo
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval docdir=\${ac_option_val$ac_site_file2-\$docdir}
+  fi
+fi
+if test -n "$ac_option_set_ddvidir$ac_option_set_d_ddvidir$ac_option_set_d_ddvidi$ac_option_set_d_ddvid$ac_option_set_d_ddvi$ac_option_set_d_ddv"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_ddvidir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_ddvidir; then
+        ac_site_file1=$ac_option_set_ddvidir
+        ac_site_file2=_ddvidir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddvidir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddvidir; then
+        ac_site_file1=$ac_option_set_d_ddvidir
+        ac_site_file2=_d_ddvidir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddvidi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddvidi; then
+        ac_site_file1=$ac_option_set_d_ddvidi
+        ac_site_file2=_d_ddvidi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddvid in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddvid; then
+        ac_site_file1=$ac_option_set_d_ddvid
+        ac_site_file2=_d_ddvid
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddvi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddvi; then
+        ac_site_file1=$ac_option_set_d_ddvi
+        ac_site_file2=_d_ddvi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_ddv in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_ddv; then
+        ac_site_file1=$ac_option_set_d_ddv
+        ac_site_file2=_d_ddv
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval dvidir=\${ac_option_val$ac_site_file2-\$dvidir}
+  fi
+fi
+if test -n "$ac_option_set_dexec_dprefix$ac_option_set_d_dexec__prefix$ac_option_set_d_dexec_dprefix$ac_option_set_d_dexec_dprefi$ac_option_set_d_dexec_dpref$ac_option_set_d_dexec_dpre$ac_option_set_d_dexec_dpr$ac_option_set_d_dexec_dp$ac_option_set_d_dexec_d$ac_option_set_d_dexec$ac_option_set_d_dexe$ac_option_set_d_dex"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dexec_dprefix in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dexec_dprefix; then
+        ac_site_file1=$ac_option_set_dexec_dprefix
+        ac_site_file2=_dexec_dprefix
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dexec__prefix in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dexec__prefix; then
+        ac_site_file1=$ac_option_set_d_dexec__prefix
+        ac_site_file2=_d_dexec__prefix
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dexec_dprefix in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dexec_dprefix; then
+        ac_site_file1=$ac_option_set_d_dexec_dprefix
+        ac_site_file2=_d_dexec_dprefix
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dexec_dprefi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dexec_dprefi; then
+        ac_site_file1=$ac_option_set_d_dexec_dprefi
+        ac_site_file2=_d_dexec_dprefi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dexec_dpref in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dexec_dpref; then
+        ac_site_file1=$ac_option_set_d_dexec_dpref
+        ac_site_file2=_d_dexec_dpref
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dexec_dpre in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dexec_dpre; then
+        ac_site_file1=$ac_option_set_d_dexec_dpre
+        ac_site_file2=_d_dexec_dpre
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dexec_dpr in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dexec_dpr; then
+        ac_site_file1=$ac_option_set_d_dexec_dpr
+        ac_site_file2=_d_dexec_dpr
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dexec_dp in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dexec_dp; then
+        ac_site_file1=$ac_option_set_d_dexec_dp
+        ac_site_file2=_d_dexec_dp
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dexec_d in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dexec_d; then
+        ac_site_file1=$ac_option_set_d_dexec_d
+        ac_site_file2=_d_dexec_d
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dexec in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dexec; then
+        ac_site_file1=$ac_option_set_d_dexec
+        ac_site_file2=_d_dexec
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dexe in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dexe; then
+        ac_site_file1=$ac_option_set_d_dexe
+        ac_site_file2=_d_dexe
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dex in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dex; then
+        ac_site_file1=$ac_option_set_d_dex
+        ac_site_file2=_d_dex
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval exec_prefix=\${ac_option_val$ac_site_file2-\$exec_prefix}
+  fi
+fi
+if test -n "$ac_option_set_dhost$ac_option_set_d_dhost$ac_option_set_d_dhos$ac_option_set_d_dho"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dhost in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dhost; then
+        ac_site_file1=$ac_option_set_dhost
+        ac_site_file2=_dhost
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dhost in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dhost; then
+        ac_site_file1=$ac_option_set_d_dhost
+        ac_site_file2=_d_dhost
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dhos in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dhos; then
+        ac_site_file1=$ac_option_set_d_dhos
+        ac_site_file2=_d_dhos
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dho in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dho; then
+        ac_site_file1=$ac_option_set_d_dho
+        ac_site_file2=_d_dho
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval host_alias=\${ac_option_val$ac_site_file2-\$host_alias}
+  fi
+fi
+if test -n "$ac_option_set_dhtmldir$ac_option_set_d_dhtmldir$ac_option_set_d_dhtmldi$ac_option_set_d_dhtmld$ac_option_set_d_dhtml$ac_option_set_d_dhtm$ac_option_set_d_dht"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dhtmldir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dhtmldir; then
+        ac_site_file1=$ac_option_set_dhtmldir
+        ac_site_file2=_dhtmldir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dhtmldir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dhtmldir; then
+        ac_site_file1=$ac_option_set_d_dhtmldir
+        ac_site_file2=_d_dhtmldir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dhtmldi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dhtmldi; then
+        ac_site_file1=$ac_option_set_d_dhtmldi
+        ac_site_file2=_d_dhtmldi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dhtmld in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dhtmld; then
+        ac_site_file1=$ac_option_set_d_dhtmld
+        ac_site_file2=_d_dhtmld
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dhtml in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dhtml; then
+        ac_site_file1=$ac_option_set_d_dhtml
+        ac_site_file2=_d_dhtml
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dhtm in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dhtm; then
+        ac_site_file1=$ac_option_set_d_dhtm
+        ac_site_file2=_d_dhtm
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dht in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dht; then
+        ac_site_file1=$ac_option_set_d_dht
+        ac_site_file2=_d_dht
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval htmldir=\${ac_option_val$ac_site_file2-\$htmldir}
+  fi
+fi
+if test -n "$ac_option_set_dincludedir$ac_option_set_d_dincludedir$ac_option_set_d_dincludedi$ac_option_set_d_dincluded$ac_option_set_d_dinclude$ac_option_set_d_dinclud$ac_option_set_d_dinclu$ac_option_set_d_dincl$ac_option_set_d_dinc"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dincludedir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dincludedir; then
+        ac_site_file1=$ac_option_set_dincludedir
+        ac_site_file2=_dincludedir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dincludedir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dincludedir; then
+        ac_site_file1=$ac_option_set_d_dincludedir
+        ac_site_file2=_d_dincludedir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dincludedi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dincludedi; then
+        ac_site_file1=$ac_option_set_d_dincludedi
+        ac_site_file2=_d_dincludedi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dincluded in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dincluded; then
+        ac_site_file1=$ac_option_set_d_dincluded
+        ac_site_file2=_d_dincluded
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dinclude in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dinclude; then
+        ac_site_file1=$ac_option_set_d_dinclude
+        ac_site_file2=_d_dinclude
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dinclud in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dinclud; then
+        ac_site_file1=$ac_option_set_d_dinclud
+        ac_site_file2=_d_dinclud
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dinclu in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dinclu; then
+        ac_site_file1=$ac_option_set_d_dinclu
+        ac_site_file2=_d_dinclu
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dincl in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dincl; then
+        ac_site_file1=$ac_option_set_d_dincl
+        ac_site_file2=_d_dincl
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dinc in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dinc; then
+        ac_site_file1=$ac_option_set_d_dinc
+        ac_site_file2=_d_dinc
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval includedir=\${ac_option_val$ac_site_file2-\$includedir}
+  fi
+fi
+if test -n "$ac_option_set_dinfodir$ac_option_set_d_dinfodir$ac_option_set_d_dinfodi$ac_option_set_d_dinfod$ac_option_set_d_dinfo$ac_option_set_d_dinf"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dinfodir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dinfodir; then
+        ac_site_file1=$ac_option_set_dinfodir
+        ac_site_file2=_dinfodir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dinfodir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dinfodir; then
+        ac_site_file1=$ac_option_set_d_dinfodir
+        ac_site_file2=_d_dinfodir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dinfodi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dinfodi; then
+        ac_site_file1=$ac_option_set_d_dinfodi
+        ac_site_file2=_d_dinfodi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dinfod in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dinfod; then
+        ac_site_file1=$ac_option_set_d_dinfod
+        ac_site_file2=_d_dinfod
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dinfo in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dinfo; then
+        ac_site_file1=$ac_option_set_d_dinfo
+        ac_site_file2=_d_dinfo
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dinf in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dinf; then
+        ac_site_file1=$ac_option_set_d_dinf
+        ac_site_file2=_d_dinf
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval infodir=\${ac_option_val$ac_site_file2-\$infodir}
+  fi
+fi
+if test -n "$ac_option_set_dlibdir$ac_option_set_d_dlibdir$ac_option_set_d_dlibdi$ac_option_set_d_dlibd"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dlibdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dlibdir; then
+        ac_site_file1=$ac_option_set_dlibdir
+        ac_site_file2=_dlibdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlibdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlibdir; then
+        ac_site_file1=$ac_option_set_d_dlibdir
+        ac_site_file2=_d_dlibdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlibdi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlibdi; then
+        ac_site_file1=$ac_option_set_d_dlibdi
+        ac_site_file2=_d_dlibdi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlibd in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlibd; then
+        ac_site_file1=$ac_option_set_d_dlibd
+        ac_site_file2=_d_dlibd
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval libdir=\${ac_option_val$ac_site_file2-\$libdir}
+  fi
+fi
+if test -n "$ac_option_set_dlibexecdir$ac_option_set_d_dlibexecdir$ac_option_set_d_dlibexecdi$ac_option_set_d_dlibexecd$ac_option_set_d_dlibexec$ac_option_set_d_dlibexe$ac_option_set_d_dlibex$ac_option_set_d_dlibe"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dlibexecdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dlibexecdir; then
+        ac_site_file1=$ac_option_set_dlibexecdir
+        ac_site_file2=_dlibexecdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlibexecdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlibexecdir; then
+        ac_site_file1=$ac_option_set_d_dlibexecdir
+        ac_site_file2=_d_dlibexecdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlibexecdi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlibexecdi; then
+        ac_site_file1=$ac_option_set_d_dlibexecdi
+        ac_site_file2=_d_dlibexecdi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlibexecd in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlibexecd; then
+        ac_site_file1=$ac_option_set_d_dlibexecd
+        ac_site_file2=_d_dlibexecd
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlibexec in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlibexec; then
+        ac_site_file1=$ac_option_set_d_dlibexec
+        ac_site_file2=_d_dlibexec
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlibexe in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlibexe; then
+        ac_site_file1=$ac_option_set_d_dlibexe
+        ac_site_file2=_d_dlibexe
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlibex in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlibex; then
+        ac_site_file1=$ac_option_set_d_dlibex
+        ac_site_file2=_d_dlibex
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlibe in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlibe; then
+        ac_site_file1=$ac_option_set_d_dlibe
+        ac_site_file2=_d_dlibe
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval libexecdir=\${ac_option_val$ac_site_file2-\$libexecdir}
+  fi
+fi
+if test -n "$ac_option_set_dlocaledir$ac_option_set_d_dlocaledir$ac_option_set_d_dlocaledi$ac_option_set_d_dlocaled$ac_option_set_d_dlocale"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dlocaledir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dlocaledir; then
+        ac_site_file1=$ac_option_set_dlocaledir
+        ac_site_file2=_dlocaledir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlocaledir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlocaledir; then
+        ac_site_file1=$ac_option_set_d_dlocaledir
+        ac_site_file2=_d_dlocaledir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlocaledi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlocaledi; then
+        ac_site_file1=$ac_option_set_d_dlocaledi
+        ac_site_file2=_d_dlocaledi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlocaled in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlocaled; then
+        ac_site_file1=$ac_option_set_d_dlocaled
+        ac_site_file2=_d_dlocaled
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlocale in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlocale; then
+        ac_site_file1=$ac_option_set_d_dlocale
+        ac_site_file2=_d_dlocale
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval localedir=\${ac_option_val$ac_site_file2-\$localedir}
+  fi
+fi
+if test -n "$ac_option_set_dlocalstatedir$ac_option_set_d_dlocalstatedir$ac_option_set_d_dlocalstatedi$ac_option_set_d_dlocalstated$ac_option_set_d_dlocalstate$ac_option_set_d_dlocalstat$ac_option_set_d_dlocalsta$ac_option_set_d_dlocalst$ac_option_set_d_dlocals"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dlocalstatedir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dlocalstatedir; then
+        ac_site_file1=$ac_option_set_dlocalstatedir
+        ac_site_file2=_dlocalstatedir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlocalstatedir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlocalstatedir; then
+        ac_site_file1=$ac_option_set_d_dlocalstatedir
+        ac_site_file2=_d_dlocalstatedir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlocalstatedi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlocalstatedi; then
+        ac_site_file1=$ac_option_set_d_dlocalstatedi
+        ac_site_file2=_d_dlocalstatedi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlocalstated in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlocalstated; then
+        ac_site_file1=$ac_option_set_d_dlocalstated
+        ac_site_file2=_d_dlocalstated
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlocalstate in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlocalstate; then
+        ac_site_file1=$ac_option_set_d_dlocalstate
+        ac_site_file2=_d_dlocalstate
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlocalstat in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlocalstat; then
+        ac_site_file1=$ac_option_set_d_dlocalstat
+        ac_site_file2=_d_dlocalstat
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlocalsta in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlocalsta; then
+        ac_site_file1=$ac_option_set_d_dlocalsta
+        ac_site_file2=_d_dlocalsta
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlocalst in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlocalst; then
+        ac_site_file1=$ac_option_set_d_dlocalst
+        ac_site_file2=_d_dlocalst
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dlocals in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dlocals; then
+        ac_site_file1=$ac_option_set_d_dlocals
+        ac_site_file2=_d_dlocals
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval localstatedir=\${ac_option_val$ac_site_file2-\$localstatedir}
+  fi
+fi
+if test -n "$ac_option_set_dmandir$ac_option_set_d_dmandir$ac_option_set_d_dmandi$ac_option_set_d_dmand$ac_option_set_d_dman$ac_option_set_d_dma$ac_option_set_d_dm"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dmandir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dmandir; then
+        ac_site_file1=$ac_option_set_dmandir
+        ac_site_file2=_dmandir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dmandir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dmandir; then
+        ac_site_file1=$ac_option_set_d_dmandir
+        ac_site_file2=_d_dmandir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dmandi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dmandi; then
+        ac_site_file1=$ac_option_set_d_dmandi
+        ac_site_file2=_d_dmandi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dmand in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dmand; then
+        ac_site_file1=$ac_option_set_d_dmand
+        ac_site_file2=_d_dmand
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dman in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dman; then
+        ac_site_file1=$ac_option_set_d_dman
+        ac_site_file2=_d_dman
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dma in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dma; then
+        ac_site_file1=$ac_option_set_d_dma
+        ac_site_file2=_d_dma
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dm in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dm; then
+        ac_site_file1=$ac_option_set_d_dm
+        ac_site_file2=_d_dm
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval mandir=\${ac_option_val$ac_site_file2-\$mandir}
+  fi
+fi
+if test -n "$ac_option_set_doldincludedir$ac_option_set_d_doldincludedir$ac_option_set_d_doldincludedi$ac_option_set_d_doldincluded$ac_option_set_d_doldinclude$ac_option_set_d_doldinclud$ac_option_set_d_doldinclu$ac_option_set_d_doldincl$ac_option_set_d_doldinc$ac_option_set_d_doldin$ac_option_set_d_doldi$ac_option_set_d_dold$ac_option_set_d_dol$ac_option_set_d_do"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_doldincludedir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_doldincludedir; then
+        ac_site_file1=$ac_option_set_doldincludedir
+        ac_site_file2=_doldincludedir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_doldincludedir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_doldincludedir; then
+        ac_site_file1=$ac_option_set_d_doldincludedir
+        ac_site_file2=_d_doldincludedir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_doldincludedi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_doldincludedi; then
+        ac_site_file1=$ac_option_set_d_doldincludedi
+        ac_site_file2=_d_doldincludedi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_doldincluded in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_doldincluded; then
+        ac_site_file1=$ac_option_set_d_doldincluded
+        ac_site_file2=_d_doldincluded
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_doldinclude in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_doldinclude; then
+        ac_site_file1=$ac_option_set_d_doldinclude
+        ac_site_file2=_d_doldinclude
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_doldinclud in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_doldinclud; then
+        ac_site_file1=$ac_option_set_d_doldinclud
+        ac_site_file2=_d_doldinclud
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_doldinclu in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_doldinclu; then
+        ac_site_file1=$ac_option_set_d_doldinclu
+        ac_site_file2=_d_doldinclu
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_doldincl in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_doldincl; then
+        ac_site_file1=$ac_option_set_d_doldincl
+        ac_site_file2=_d_doldincl
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_doldinc in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_doldinc; then
+        ac_site_file1=$ac_option_set_d_doldinc
+        ac_site_file2=_d_doldinc
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_doldin in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_doldin; then
+        ac_site_file1=$ac_option_set_d_doldin
+        ac_site_file2=_d_doldin
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_doldi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_doldi; then
+        ac_site_file1=$ac_option_set_d_doldi
+        ac_site_file2=_d_doldi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dold in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dold; then
+        ac_site_file1=$ac_option_set_d_dold
+        ac_site_file2=_d_dold
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dol in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dol; then
+        ac_site_file1=$ac_option_set_d_dol
+        ac_site_file2=_d_dol
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_do in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_do; then
+        ac_site_file1=$ac_option_set_d_do
+        ac_site_file2=_d_do
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval oldincludedir=\${ac_option_val$ac_site_file2-\$oldincludedir}
+  fi
+fi
+if test -n "$ac_option_set_dprefix$ac_option_set_d_dprefix$ac_option_set_d_dprefi$ac_option_set_d_dpref$ac_option_set_d_dpre$ac_option_set_d_dpr$ac_option_set_d_dp"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dprefix in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dprefix; then
+        ac_site_file1=$ac_option_set_dprefix
+        ac_site_file2=_dprefix
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprefix in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprefix; then
+        ac_site_file1=$ac_option_set_d_dprefix
+        ac_site_file2=_d_dprefix
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprefi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprefi; then
+        ac_site_file1=$ac_option_set_d_dprefi
+        ac_site_file2=_d_dprefi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dpref in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dpref; then
+        ac_site_file1=$ac_option_set_d_dpref
+        ac_site_file2=_d_dpref
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dpre in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dpre; then
+        ac_site_file1=$ac_option_set_d_dpre
+        ac_site_file2=_d_dpre
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dpr in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dpr; then
+        ac_site_file1=$ac_option_set_d_dpr
+        ac_site_file2=_d_dpr
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dp in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dp; then
+        ac_site_file1=$ac_option_set_d_dp
+        ac_site_file2=_d_dp
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval prefix=\${ac_option_val$ac_site_file2-\$prefix}
+  fi
+fi
+if test -n "$ac_option_set_dprogram_dprefix$ac_option_set_d_dprogram_dprefix$ac_option_set_d_dprogram_dprefi$ac_option_set_d_dprogram_dpref$ac_option_set_d_dprogram_dpre$ac_option_set_d_dprogram_dpr$ac_option_set_d_dprogram_dp"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dprogram_dprefix in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dprogram_dprefix; then
+        ac_site_file1=$ac_option_set_dprogram_dprefix
+        ac_site_file2=_dprogram_dprefix
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dprefix in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dprefix; then
+        ac_site_file1=$ac_option_set_d_dprogram_dprefix
+        ac_site_file2=_d_dprogram_dprefix
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dprefi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dprefi; then
+        ac_site_file1=$ac_option_set_d_dprogram_dprefi
+        ac_site_file2=_d_dprogram_dprefi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dpref in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dpref; then
+        ac_site_file1=$ac_option_set_d_dprogram_dpref
+        ac_site_file2=_d_dprogram_dpref
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dpre in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dpre; then
+        ac_site_file1=$ac_option_set_d_dprogram_dpre
+        ac_site_file2=_d_dprogram_dpre
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dpr in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dpr; then
+        ac_site_file1=$ac_option_set_d_dprogram_dpr
+        ac_site_file2=_d_dprogram_dpr
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dp in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dp; then
+        ac_site_file1=$ac_option_set_d_dprogram_dp
+        ac_site_file2=_d_dprogram_dp
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval program_prefix=\${ac_option_val$ac_site_file2-\$program_prefix}
+  fi
+fi
+if test -n "$ac_option_set_dprogram_dsuffix$ac_option_set_d_dprogram_dsuffix$ac_option_set_d_dprogram_dsuffi$ac_option_set_d_dprogram_dsuff$ac_option_set_d_dprogram_dsuf$ac_option_set_d_dprogram_dsu$ac_option_set_d_dprogram_ds"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dprogram_dsuffix in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dprogram_dsuffix; then
+        ac_site_file1=$ac_option_set_dprogram_dsuffix
+        ac_site_file2=_dprogram_dsuffix
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dsuffix in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dsuffix; then
+        ac_site_file1=$ac_option_set_d_dprogram_dsuffix
+        ac_site_file2=_d_dprogram_dsuffix
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dsuffi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dsuffi; then
+        ac_site_file1=$ac_option_set_d_dprogram_dsuffi
+        ac_site_file2=_d_dprogram_dsuffi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dsuff in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dsuff; then
+        ac_site_file1=$ac_option_set_d_dprogram_dsuff
+        ac_site_file2=_d_dprogram_dsuff
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dsuf in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dsuf; then
+        ac_site_file1=$ac_option_set_d_dprogram_dsuf
+        ac_site_file2=_d_dprogram_dsuf
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dsu in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dsu; then
+        ac_site_file1=$ac_option_set_d_dprogram_dsu
+        ac_site_file2=_d_dprogram_dsu
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_ds in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_ds; then
+        ac_site_file1=$ac_option_set_d_dprogram_ds
+        ac_site_file2=_d_dprogram_ds
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval program_suffix=\${ac_option_val$ac_site_file2-\$program_suffix}
+  fi
+fi
+if test -n "$ac_option_set_dprogram_dtransform_dname$ac_option_set_d_dprogram_dtransform_dname$ac_option_set_d_dprogram_dtransform_dnam$ac_option_set_d_dprogram_dtransform_dna$ac_option_set_d_dprogram_dtransform_dn$ac_option_set_d_dprogram_dtransform_d$ac_option_set_d_dprogram_dtransform$ac_option_set_d_dprogram_dtransfor$ac_option_set_d_dprogram_dtransfo$ac_option_set_d_dprogram_dtransf$ac_option_set_d_dprogram_dtrans$ac_option_set_d_dprogram_dtran$ac_option_set_d_dprogram_dtra$ac_option_set_d_dprogram_dtr$ac_option_set_d_dprogram_dt"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dprogram_dtransform_dname in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dprogram_dtransform_dname; then
+        ac_site_file1=$ac_option_set_dprogram_dtransform_dname
+        ac_site_file2=_dprogram_dtransform_dname
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dtransform_dnam in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dtransform_dnam; then
+        ac_site_file1=$ac_option_set_d_dprogram_dtransform_dnam
+        ac_site_file2=_d_dprogram_dtransform_dnam
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dtransform_dna in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dtransform_dna; then
+        ac_site_file1=$ac_option_set_d_dprogram_dtransform_dna
+        ac_site_file2=_d_dprogram_dtransform_dna
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dtransform_dn in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dtransform_dn; then
+        ac_site_file1=$ac_option_set_d_dprogram_dtransform_dn
+        ac_site_file2=_d_dprogram_dtransform_dn
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dtransform_d in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dtransform_d; then
+        ac_site_file1=$ac_option_set_d_dprogram_dtransform_d
+        ac_site_file2=_d_dprogram_dtransform_d
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dtransform in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dtransform; then
+        ac_site_file1=$ac_option_set_d_dprogram_dtransform
+        ac_site_file2=_d_dprogram_dtransform
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dtransfor in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dtransfor; then
+        ac_site_file1=$ac_option_set_d_dprogram_dtransfor
+        ac_site_file2=_d_dprogram_dtransfor
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dtransfo in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dtransfo; then
+        ac_site_file1=$ac_option_set_d_dprogram_dtransfo
+        ac_site_file2=_d_dprogram_dtransfo
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dtransf in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dtransf; then
+        ac_site_file1=$ac_option_set_d_dprogram_dtransf
+        ac_site_file2=_d_dprogram_dtransf
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dtrans in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dtrans; then
+        ac_site_file1=$ac_option_set_d_dprogram_dtrans
+        ac_site_file2=_d_dprogram_dtrans
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dtran in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dtran; then
+        ac_site_file1=$ac_option_set_d_dprogram_dtran
+        ac_site_file2=_d_dprogram_dtran
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dtra in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dtra; then
+        ac_site_file1=$ac_option_set_d_dprogram_dtra
+        ac_site_file2=_d_dprogram_dtra
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dtr in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dtr; then
+        ac_site_file1=$ac_option_set_d_dprogram_dtr
+        ac_site_file2=_d_dprogram_dtr
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dprogram_dt in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dprogram_dt; then
+        ac_site_file1=$ac_option_set_d_dprogram_dt
+        ac_site_file2=_d_dprogram_dt
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval program_transform_name=\${ac_option_val$ac_site_file2-\$program_transform_name}
+  fi
+fi
+if test -n "$ac_option_set_dpdfdir$ac_option_set_d_dpdfdir$ac_option_set_d_dpdfdi$ac_option_set_d_dpdfd$ac_option_set_d_dpdf$ac_option_set_d_dpd"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dpdfdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dpdfdir; then
+        ac_site_file1=$ac_option_set_dpdfdir
+        ac_site_file2=_dpdfdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dpdfdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dpdfdir; then
+        ac_site_file1=$ac_option_set_d_dpdfdir
+        ac_site_file2=_d_dpdfdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dpdfdi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dpdfdi; then
+        ac_site_file1=$ac_option_set_d_dpdfdi
+        ac_site_file2=_d_dpdfdi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dpdfd in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dpdfd; then
+        ac_site_file1=$ac_option_set_d_dpdfd
+        ac_site_file2=_d_dpdfd
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dpdf in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dpdf; then
+        ac_site_file1=$ac_option_set_d_dpdf
+        ac_site_file2=_d_dpdf
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dpd in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dpd; then
+        ac_site_file1=$ac_option_set_d_dpd
+        ac_site_file2=_d_dpd
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval pdfdir=\${ac_option_val$ac_site_file2-\$pdfdir}
+  fi
+fi
+if test -n "$ac_option_set_dpsdir$ac_option_set_d_dpsdir$ac_option_set_d_dpsdi$ac_option_set_d_dpsd$ac_option_set_d_dps"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dpsdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dpsdir; then
+        ac_site_file1=$ac_option_set_dpsdir
+        ac_site_file2=_dpsdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dpsdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dpsdir; then
+        ac_site_file1=$ac_option_set_d_dpsdir
+        ac_site_file2=_d_dpsdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dpsdi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dpsdi; then
+        ac_site_file1=$ac_option_set_d_dpsdi
+        ac_site_file2=_d_dpsdi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dpsd in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dpsd; then
+        ac_site_file1=$ac_option_set_d_dpsd
+        ac_site_file2=_d_dpsd
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dps in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dps; then
+        ac_site_file1=$ac_option_set_d_dps
+        ac_site_file2=_d_dps
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval psdir=\${ac_option_val$ac_site_file2-\$psdir}
+  fi
+fi
+if test -n "$ac_option_set_dsbindir$ac_option_set_d_dsbindir$ac_option_set_d_dsbindi$ac_option_set_d_dsbind$ac_option_set_d_dsbin$ac_option_set_d_dsbi$ac_option_set_d_dsb"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dsbindir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dsbindir; then
+        ac_site_file1=$ac_option_set_dsbindir
+        ac_site_file2=_dsbindir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsbindir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsbindir; then
+        ac_site_file1=$ac_option_set_d_dsbindir
+        ac_site_file2=_d_dsbindir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsbindi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsbindi; then
+        ac_site_file1=$ac_option_set_d_dsbindi
+        ac_site_file2=_d_dsbindi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsbind in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsbind; then
+        ac_site_file1=$ac_option_set_d_dsbind
+        ac_site_file2=_d_dsbind
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsbin in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsbin; then
+        ac_site_file1=$ac_option_set_d_dsbin
+        ac_site_file2=_d_dsbin
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsbi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsbi; then
+        ac_site_file1=$ac_option_set_d_dsbi
+        ac_site_file2=_d_dsbi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsb in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsb; then
+        ac_site_file1=$ac_option_set_d_dsb
+        ac_site_file2=_d_dsb
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval sbindir=\${ac_option_val$ac_site_file2-\$sbindir}
+  fi
+fi
+if test -n "$ac_option_set_dsharedstatedir$ac_option_set_d_dsharedstatedir$ac_option_set_d_dsharedstatedi$ac_option_set_d_dsharedstated$ac_option_set_d_dsharedstate$ac_option_set_d_dsharedstat$ac_option_set_d_dsharedsta$ac_option_set_d_dsharedst$ac_option_set_d_dshareds$ac_option_set_d_dshared$ac_option_set_d_dshare$ac_option_set_d_dshar$ac_option_set_d_dsha$ac_option_set_d_dsh"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dsharedstatedir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dsharedstatedir; then
+        ac_site_file1=$ac_option_set_dsharedstatedir
+        ac_site_file2=_dsharedstatedir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsharedstatedir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsharedstatedir; then
+        ac_site_file1=$ac_option_set_d_dsharedstatedir
+        ac_site_file2=_d_dsharedstatedir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsharedstatedi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsharedstatedi; then
+        ac_site_file1=$ac_option_set_d_dsharedstatedi
+        ac_site_file2=_d_dsharedstatedi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsharedstated in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsharedstated; then
+        ac_site_file1=$ac_option_set_d_dsharedstated
+        ac_site_file2=_d_dsharedstated
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsharedstate in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsharedstate; then
+        ac_site_file1=$ac_option_set_d_dsharedstate
+        ac_site_file2=_d_dsharedstate
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsharedstat in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsharedstat; then
+        ac_site_file1=$ac_option_set_d_dsharedstat
+        ac_site_file2=_d_dsharedstat
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsharedsta in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsharedsta; then
+        ac_site_file1=$ac_option_set_d_dsharedsta
+        ac_site_file2=_d_dsharedsta
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsharedst in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsharedst; then
+        ac_site_file1=$ac_option_set_d_dsharedst
+        ac_site_file2=_d_dsharedst
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dshareds in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dshareds; then
+        ac_site_file1=$ac_option_set_d_dshareds
+        ac_site_file2=_d_dshareds
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dshared in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dshared; then
+        ac_site_file1=$ac_option_set_d_dshared
+        ac_site_file2=_d_dshared
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dshare in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dshare; then
+        ac_site_file1=$ac_option_set_d_dshare
+        ac_site_file2=_d_dshare
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dshar in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dshar; then
+        ac_site_file1=$ac_option_set_d_dshar
+        ac_site_file2=_d_dshar
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsha in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsha; then
+        ac_site_file1=$ac_option_set_d_dsha
+        ac_site_file2=_d_dsha
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsh in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsh; then
+        ac_site_file1=$ac_option_set_d_dsh
+        ac_site_file2=_d_dsh
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval sharedstatedir=\${ac_option_val$ac_site_file2-\$sharedstatedir}
+  fi
+fi
+if test -n "$ac_option_set_dsite$ac_option_set_d_dsite$ac_option_set_d_dsit"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dsite in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dsite; then
+        ac_site_file1=$ac_option_set_dsite
+        ac_site_file2=_dsite
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsite in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsite; then
+        ac_site_file1=$ac_option_set_d_dsite
+        ac_site_file2=_d_dsite
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsit in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsit; then
+        ac_site_file1=$ac_option_set_d_dsit
+        ac_site_file2=_d_dsit
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval site=\${ac_option_val$ac_site_file2-\$site}
+  fi
+fi
+if test -n "$ac_option_set_dsrcdir$ac_option_set_d_dsrcdir$ac_option_set_d_dsrcdi$ac_option_set_d_dsrcd$ac_option_set_d_dsrc$ac_option_set_d_dsr"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dsrcdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dsrcdir; then
+        ac_site_file1=$ac_option_set_dsrcdir
+        ac_site_file2=_dsrcdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsrcdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsrcdir; then
+        ac_site_file1=$ac_option_set_d_dsrcdir
+        ac_site_file2=_d_dsrcdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsrcdi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsrcdi; then
+        ac_site_file1=$ac_option_set_d_dsrcdi
+        ac_site_file2=_d_dsrcdi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsrcd in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsrcd; then
+        ac_site_file1=$ac_option_set_d_dsrcd
+        ac_site_file2=_d_dsrcd
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsrc in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsrc; then
+        ac_site_file1=$ac_option_set_d_dsrc
+        ac_site_file2=_d_dsrc
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsr in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsr; then
+        ac_site_file1=$ac_option_set_d_dsr
+        ac_site_file2=_d_dsr
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval srcdir=\${ac_option_val$ac_site_file2-\$srcdir}
+  fi
+fi
+if test -n "$ac_option_set_dsysconfdir$ac_option_set_d_dsysconfdir$ac_option_set_d_dsysconfdi$ac_option_set_d_dsysconfd$ac_option_set_d_dsysconf$ac_option_set_d_dsyscon$ac_option_set_d_dsysco$ac_option_set_d_dsysc$ac_option_set_d_dsys$ac_option_set_d_dsy"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dsysconfdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dsysconfdir; then
+        ac_site_file1=$ac_option_set_dsysconfdir
+        ac_site_file2=_dsysconfdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsysconfdir in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsysconfdir; then
+        ac_site_file1=$ac_option_set_d_dsysconfdir
+        ac_site_file2=_d_dsysconfdir
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsysconfdi in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsysconfdi; then
+        ac_site_file1=$ac_option_set_d_dsysconfdi
+        ac_site_file2=_d_dsysconfdi
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsysconfd in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsysconfd; then
+        ac_site_file1=$ac_option_set_d_dsysconfd
+        ac_site_file2=_d_dsysconfd
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsysconf in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsysconf; then
+        ac_site_file1=$ac_option_set_d_dsysconf
+        ac_site_file2=_d_dsysconf
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsyscon in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsyscon; then
+        ac_site_file1=$ac_option_set_d_dsyscon
+        ac_site_file2=_d_dsyscon
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsysco in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsysco; then
+        ac_site_file1=$ac_option_set_d_dsysco
+        ac_site_file2=_d_dsysco
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsysc in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsysc; then
+        ac_site_file1=$ac_option_set_d_dsysc
+        ac_site_file2=_d_dsysc
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsys in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsys; then
+        ac_site_file1=$ac_option_set_d_dsys
+        ac_site_file2=_d_dsys
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dsy in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dsy; then
+        ac_site_file1=$ac_option_set_d_dsy
+        ac_site_file2=_d_dsy
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval sysconfdir=\${ac_option_val$ac_site_file2-\$sysconfdir}
+  fi
+fi
+if test -n "$ac_option_set_dtarget$ac_option_set_d_dtarget$ac_option_set_d_dtarge$ac_option_set_d_dtarg$ac_option_set_d_dtar$ac_option_set_d_dta$ac_option_set_d_dt"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dtarget in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dtarget; then
+        ac_site_file1=$ac_option_set_dtarget
+        ac_site_file2=_dtarget
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dtarget in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dtarget; then
+        ac_site_file1=$ac_option_set_d_dtarget
+        ac_site_file2=_d_dtarget
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dtarge in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dtarge; then
+        ac_site_file1=$ac_option_set_d_dtarge
+        ac_site_file2=_d_dtarge
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dtarg in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dtarg; then
+        ac_site_file1=$ac_option_set_d_dtarg
+        ac_site_file2=_d_dtarg
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dtar in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dtar; then
+        ac_site_file1=$ac_option_set_d_dtar
+        ac_site_file2=_d_dtar
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dta in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dta; then
+        ac_site_file1=$ac_option_set_d_dta
+        ac_site_file2=_d_dta
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dt in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dt; then
+        ac_site_file1=$ac_option_set_d_dt
+        ac_site_file2=_d_dt
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval target_alias=\${ac_option_val$ac_site_file2-\$target_alias}
+  fi
+fi
+if test -n "$ac_option_set_dx_dincludes$ac_option_set_d_dx_dincludes$ac_option_set_d_dx_dinclude$ac_option_set_d_dx_dinclud$ac_option_set_d_dx_dinclu$ac_option_set_d_dx_dincl$ac_option_set_d_dx_dinc$ac_option_set_d_dx_din$ac_option_set_d_dx_di"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dx_dincludes in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dx_dincludes; then
+        ac_site_file1=$ac_option_set_dx_dincludes
+        ac_site_file2=_dx_dincludes
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dincludes in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dincludes; then
+        ac_site_file1=$ac_option_set_d_dx_dincludes
+        ac_site_file2=_d_dx_dincludes
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dinclude in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dinclude; then
+        ac_site_file1=$ac_option_set_d_dx_dinclude
+        ac_site_file2=_d_dx_dinclude
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dinclud in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dinclud; then
+        ac_site_file1=$ac_option_set_d_dx_dinclud
+        ac_site_file2=_d_dx_dinclud
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dinclu in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dinclu; then
+        ac_site_file1=$ac_option_set_d_dx_dinclu
+        ac_site_file2=_d_dx_dinclu
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dincl in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dincl; then
+        ac_site_file1=$ac_option_set_d_dx_dincl
+        ac_site_file2=_d_dx_dincl
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dinc in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dinc; then
+        ac_site_file1=$ac_option_set_d_dx_dinc
+        ac_site_file2=_d_dx_dinc
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_din in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_din; then
+        ac_site_file1=$ac_option_set_d_dx_din
+        ac_site_file2=_d_dx_din
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_di in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_di; then
+        ac_site_file1=$ac_option_set_d_dx_di
+        ac_site_file2=_d_dx_di
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval x_includes=\${ac_option_val$ac_site_file2-\$x_includes}
+  fi
+fi
+if test -n "$ac_option_set_dx_dlibraries$ac_option_set_d_dx_dlibraries$ac_option_set_d_dx_dlibrarie$ac_option_set_d_dx_dlibrari$ac_option_set_d_dx_dlibrar$ac_option_set_d_dx_dlibra$ac_option_set_d_dx_dlibr$ac_option_set_d_dx_dlib$ac_option_set_d_dx_dli$ac_option_set_d_dx_dl"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dx_dlibraries in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dx_dlibraries; then
+        ac_site_file1=$ac_option_set_dx_dlibraries
+        ac_site_file2=_dx_dlibraries
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dlibraries in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dlibraries; then
+        ac_site_file1=$ac_option_set_d_dx_dlibraries
+        ac_site_file2=_d_dx_dlibraries
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dlibrarie in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dlibrarie; then
+        ac_site_file1=$ac_option_set_d_dx_dlibrarie
+        ac_site_file2=_d_dx_dlibrarie
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dlibrari in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dlibrari; then
+        ac_site_file1=$ac_option_set_d_dx_dlibrari
+        ac_site_file2=_d_dx_dlibrari
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dlibrar in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dlibrar; then
+        ac_site_file1=$ac_option_set_d_dx_dlibrar
+        ac_site_file2=_d_dx_dlibrar
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dlibra in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dlibra; then
+        ac_site_file1=$ac_option_set_d_dx_dlibra
+        ac_site_file2=_d_dx_dlibra
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dlibr in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dlibr; then
+        ac_site_file1=$ac_option_set_d_dx_dlibr
+        ac_site_file2=_d_dx_dlibr
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dlib in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dlib; then
+        ac_site_file1=$ac_option_set_d_dx_dlib
+        ac_site_file2=_d_dx_dlib
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dli in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dli; then
+        ac_site_file1=$ac_option_set_d_dx_dli
+        ac_site_file2=_d_dx_dli
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dx_dl in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dx_dl; then
+        ac_site_file1=$ac_option_set_d_dx_dl
+        ac_site_file2=_d_dx_dl
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d; then
+    eval x_libraries=\${ac_option_val$ac_site_file2-\$x_libraries}
+  fi
+fi
+if test -n "$ac_option_set_dC$ac_option_set_d_dconfig_dcache"; then
+  ac_site_file1=0
+  ac_site_file2=d
+  case $ac_option_set_dC in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_dC; then
+        ac_site_file1=$ac_option_set_dC
+        ac_site_file2=_dC
+      fi
+      ;;
+  esac
+  case $ac_option_set_d_dconfig_dcache in
+    *[$as_cr_digits]*)
+      if test $ac_site_file1 -le $ac_option_set_d_dconfig_dcache; then
+        ac_site_file1=$ac_option_set_d_dconfig_dcache
+        ac_site_file2=_d_dconfig_dcache
+      fi
+      ;;
+  esac
+  if test $ac_site_file2 != d && eval test -z "\$ac_option_val$ac_site_file2"; then
+    ac_site_file1=
+    eval ac_site_file1=\${ac_option_val$ac_site_file2-config.cache}
+    if test -n "$ac_site_file1"; then
+      cache_file=$ac_site_file1
+    fi
+  fi
+fi
+test -n "$ac_pwd" && ac_ls_di=$(ls -di .)
+ac_pwd_ls_di=$(cd "$ac_pwd" && ls -di .) || as_fn_error $? "working directory cannot be determined"
+test "$ac_ls_di" = "$ac_pwd_ls_di" || as_fn_error $? "pwd does not report name of working directory"
+ac_srcdir_defaulted=no
+if test -z "$srcdir"; then
+  ac_srcdir_defaulted=yes
+  as_myself=$0
+  ac_confdir=$(dirname -- "$as_myself")
+  srcdir=$ac_confdir
+fi
+if test -z "$PATH_SEPARATOR"; then
+  ac_site_file1=$(command -v sh)
+  ac_site_file1=$(dirname $ac_site_file1)
+  for PATH_SEPARATOR in ":" ";"
+  do
+    test -n "$(PATH="$ac_site_file1$PATH_SEPARATOR$ac_site_file1" sh -c : 2>&1 || $as_echo a)" || break
+  done
+fi
+exec 5>>config.log
+ac_site_file1=NONE
+ac_site_file2=NONE
+if test -n "$CONFIG_SITE"; then
+  ac_site_file1=$(realpath "$CONFIG_SITE")
+elif test -n "$prefix"; then
+  ac_site_file1=$prefix/share/config.site
+  ac_site_file2=$prefix/etc/config.site
+else
+  ac_site_file1=$ac_default_prefix/share/config.site
+  ac_site_file2=$ac_default_prefix/etc/config.site
+fi
+for ac_site_file in "$ac_site_file1" "$ac_site_file2"
+do
+  test -n "$ac_site_file" || continue
+  test /dev/null != "$ac_site_file" && test -r "$ac_site_file" || continue
+  $as_echo "$as_me:${as_lineno-$LINENO}: loading site script $ac_site_file" >&5
+  $as_echo "$as_me: loading site script $ac_site_file"
+  sed 's/^/| /' "$ac_site_file" >&5
+  . "$ac_site_file" && continue
+  $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
+  $as_echo "$as_me: error: in \`$ac_pwd':" >&2
+  as_fn_error $? "failed to load site script $ac_site_file
+See \`config.log' for more details" "$LINENO" 5
+done
+$as_echo "$as_me:${as_lineno-$LINENO}: checking build system type" >&5
+$as_echo_n "checking build system type... "
+if test -n "$ac_cv_build"; then
+  $as_echo_n "(cached) "
+else
+  ac_build_alias=$build_alias
+  ac_cv_build=$ac_build_alias
+fi
+$as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_build" >&5
+$as_echo "$ac_cv_build"
+$as_echo "$as_me:${as_lineno-$LINENO}: checking host system type" >&5
+$as_echo_n "checking host system type... "
+if test -n "$ac_cv_host"; then
+  $as_echo_n "(cached) "
+else
+  if test -n "$host_alias"; then
+    ac_host_alias=$host_alias
+    ac_tool_prefix=$host_alias-
+  else
+    ac_host_alias=$ac_cv_build
+  fi
+  ac_cv_host=$ac_host_alias
+fi
+$as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_host" >&5
+$as_echo "$ac_cv_host"
+$as_echo "$as_me:${as_lineno-$LINENO}: checking target system type" >&5
+$as_echo_n "checking target system type... "
+if test -n "$ac_cv_target"; then
+  $as_echo_n "(cached) "
+else
+  if test -n "$target_alias"; then
+    ac_target_alias=$target_alias
+  else
+    ac_target_alias=$ac_cv_host
+  fi
+  ac_cv_target=$ac_target_alias
+fi
+$as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_target" >&5
+$as_echo "$ac_cv_target"
+if test -n "$ac_cv_prog_CC"; then
+  CC=$ac_cv_prog_CC
+else
+  ac_ct_CC=$CC
+  if test -n "$ac_cv_prog_ac_ct_CC"; then
+    ac_word=$ac_cv_prog_ac_ct_CC
+  elif test -n "$ac_ct_CC"; then
+    ac_word=$ac_ct_CC
+  else
+    ac_word=${ac_tool_prefix}gcc
+  fi
+fi
+if test -n "$ac_cv_prog_CC"; then
+  $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_cv_prog_CC" >&5
+  $as_echo_n "checking for $ac_cv_prog_CC... "
+else
+  $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
+  $as_echo_n "checking for $ac_word... "
+fi
+if test -n "$ac_cv_prog_CC" || test -n "$ac_cv_prog_ac_ct_CC"; then
+  $as_echo_n "(cached) "
+else
+  if test -n "$ac_ct_CC"; then
+    ac_cv_prog_ac_ct_CC=$ac_ct_CC
+  else
+    as_save_IFS=$IFS
+    IFS=$PATH_SEPARATOR
+    for as_dir in $PATH
+    do
+      IFS=$as_save_IFS
+      test -z "$as_dir" && as_dir=.
+      for ac_exec_ext in '' $ac_executable_extensions; do
+        if as_fn_executable_p "$as_dir/$ac_word$ac_exec_ext"; then
+          ac_cv_prog_ac_ct_CC="${ac_tool_prefix}gcc"
+          $as_echo "$as_me:${as_lineno-$LINENO}: found $as_dir/$ac_word$ac_exec_ext" >&5
+          break 2
+        fi
+      done
+    done
+    IFS=$as_save_IFS
+  fi
+fi
+if test -n "$ac_cv_prog_CC"; then
+  $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_prog_CC" >&5
+  $as_echo "$ac_cv_prog_CC"
+else
+  ac_ct_CC=$ac_cv_prog_ac_ct_CC
+  if test -n "$ac_ct_CC"; then
+    $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_ct_CC" >&5
+    $as_echo "$ac_ct_CC"
+    if test "$cross_compiling:$ac_tool_warned" = "yes:"; then
+      $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: using cross tools not prefixed with host triplet" >&5
+      $as_echo "$as_me: WARNING: using cross tools not prefixed with host triplet" >&2
+      ac_tool_warned=yes
+    fi
+    CC=$ac_ct_CC
+  else
+    $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+    $as_echo "no"
+    CC=""
+    if test -n "$ac_tool_prefix"; then
+      if test -n "$ac_cv_prog_CC"; then
+        CC=$ac_cv_prog_CC
+      else
+        ac_ct_CC=$CC
+        if test -n "$ac_cv_prog_ac_ct_CC"; then
+          ac_word=$ac_cv_prog_ac_ct_CC
+        elif test -n "$ac_ct_CC"; then
+          ac_word=$ac_ct_CC
+        else
+          ac_word=gcc
+        fi
+      fi
+      if test -n "$ac_cv_prog_CC"; then
+        $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_cv_prog_CC" >&5
+        $as_echo_n "checking for $ac_cv_prog_CC... "
+      else
+        $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
+        $as_echo_n "checking for $ac_word... "
+      fi
+      if test -n "$ac_cv_prog_CC" || test -n "$ac_cv_prog_ac_ct_CC"; then
+        $as_echo_n "(cached) "
+      else
+        if test -n "$ac_ct_CC"; then
+          ac_cv_prog_ac_ct_CC=$ac_ct_CC
+        else
+          as_save_IFS=$IFS
+          IFS=$PATH_SEPARATOR
+          for as_dir in $PATH
+          do
+            IFS=$as_save_IFS
+            test -z "$as_dir" && as_dir=.
+            for ac_exec_ext in '' $ac_executable_extensions; do
+              if as_fn_executable_p "$as_dir/$ac_word$ac_exec_ext"; then
+                ac_cv_prog_ac_ct_CC="gcc"
+                $as_echo "$as_me:${as_lineno-$LINENO}: found $as_dir/$ac_word$ac_exec_ext" >&5
+                break 2
+              fi
+            done
+          done
+          IFS=$as_save_IFS
+        fi
+      fi
+      if test -n "$ac_cv_prog_CC"; then
+        $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_prog_CC" >&5
+        $as_echo "$ac_cv_prog_CC"
+      else
+        ac_ct_CC=$ac_cv_prog_ac_ct_CC
+        if test -n "$ac_ct_CC"; then
+          $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_ct_CC" >&5
+          $as_echo "$ac_ct_CC"
+          if test "$cross_compiling:$ac_tool_warned" = "yes:"; then
+            $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: using cross tools not prefixed with host triplet" >&5
+            $as_echo "$as_me: WARNING: using cross tools not prefixed with host triplet" >&2
+            ac_tool_warned=yes
+          fi
+          CC=$ac_ct_CC
+        else
+          $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+          $as_echo "no"
+          CC=""
+        fi
+      fi
+    fi
+  fi
+fi
+$as_echo "/* confdefs.h */" >confdefs.h
+$as_echo "#define PACKAGE_NAME \"\"" >>confdefs.h
+$as_echo "#define PACKAGE_TARNAME \"\"" >>confdefs.h
+$as_echo "#define PACKAGE_VERSION \"\"" >>confdefs.h
+$as_echo "#define PACKAGE_STRING \"\"" >>confdefs.h
+$as_echo "#define PACKAGE_BUGREPORT \"\"" >>confdefs.h
+$as_echo "#define PACKAGE_URL \"\"" >>confdefs.h
+ac_temp=0
+for ac_temp in 0 1 2 3 4 5 6 7 8 9 10
+do
+  test -e "$ac_pwd/$ac_temp" || break
+done
+ac_i=2
+ac_max=2
+while test -e "$ac_pwd/$ac_temp"
+do
+  while test $ac_i != 1 && test $($as_echo_n $ac_temp | cut -c $ac_i) = 9
+  do
+    #printf "%s" " $ac_temp "
+    test $ac_i = $ac_max && ac_temp=$($as_echo_n $ac_temp | cut -c 1-$((ac_i-1)))0
+    test $ac_i = 1 && ac_temp=0$($as_echo_n $ac_temp | cut -c $((ac_i+1))-$ac_max)
+    test $ac_i != $ac_max && test $ac_i != 1 && ac_temp=$($as_echo_n $ac_temp | cut -c 1-$((ac_i-1)))0$($as_echo_n $ac_temp | cut -c $((ac_i+1))-$ac_max)
+    ac_i=$((ac_i-1))
+  done
+  test $ac_i = $ac_max && ac_temp=$($as_echo_n $ac_temp | cut -c 1-$((ac_i-1)))$(($($as_echo_n $ac_temp | cut -c $ac_i)+1))
+  test $ac_i != $ac_max && test $ac_i != 1 && ac_temp=$($as_echo_n $ac_temp | cut -c 1-$((ac_i-1)))$(($($as_echo_n $ac_temp | cut -c $ac_i)+1))$($as_echo_n $ac_temp | cut -c $((ac_i+1))-$ac_max)
+  if test $ac_i = 1 && test $($as_echo_n $ac_temp | cut -c $ac_i) = 9; then
+    ac_temp=10$($as_echo_n $ac_temp | cut -c 2-$ac_max)
+    ac_max=$((ac_max+1))
+    ac_i=$ac_max
+  elif test $ac_i = 1; then
+    ac_temp=$(($($as_echo_n $ac_temp | cut -c $ac_i)+1))$($as_echo_n $ac_temp | cut -c $((ac_i+1))-$ac_max)
+  fi
+  ac_i=$ac_max
+echo $ac_temp
+done
+ac_temp="$ac_pwd/$ac_temp"
+mkdir $ac_temp
+for ac_file in $(ls $ac_pwd)
+do
+  test "$ac_pwd/$ac_file" = "$ac_temp" && continue
+  : $(mv "$ac_pwd/$ac_file" "$ac_temp" 2>&1)
+done
+mv $ac_temp/confdefs.h $ac_pwd
+$as_echo "$as_me:${as_lineno-$LINENO}: checking whether the C compiler works" >&5
+$as_echo_n "checking whether the C compiler works... "
+ac_ext=c
+ac_compile="$CC -c $CFLAGS $CPPFLAGS conftest.$ac_ext >&5"
+ac_link="$CC -o conftest $CFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $LIBS >&5"
+if test -z "$CC"; then
+  for ac_file in $(ls $ac_pwd)
+  do
+    test "$ac_pwd/$ac_file" = "$ac_temp" && continue
+    : $(rm -rf "$ac_pwd/$ac_file" 2>&1)
+  done
+  for ac_file in $(ls $ac_temp)
+  do
+    mv "$ac_temp/$ac_file" "$ac_pwd"
+  done
+  rmdir "$ac_temp"
+  $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
+  $as_echo "$as_me: error: in \`$ac_pwd':" >&2
+  as_fn_error $? "no acceptable C compiler found in \$PATH
+  See \`config.log' for more details" "$LINENO" 5
+fi
+$as_echo "$as_me:${as_lineno-$LINENO}: checking for C compiler version" >&5
+ac_compiler=$ac_compile
+for ac_option in --version -v -V -qversion
+do
+  ac_try="$ac_compiler $ac_option >&5"
+  case "$ac_try" in
+    *\"* | *\`* | *\\*)
+      ac_try_echo=\$ac_try
+      ;;
+    *)
+      ac_try_echo=$ac_try
+      ;;
+  esac
+  eval ac_try_echo="\"\$as_me:${as_lineno-$LINENO}: $ac_try_echo\""
+  $as_echo "$ac_try_echo" >&5
+  (eval "$ac_compiler $ac_option >&5") 2>conftest.err
+  ac_status=$?
+  if test -s conftest.err; then
+    sed "10a\\
+... rest of stderr output deleted ...
+         10q" conftest.err >conftest.er1
+    cat conftest.er1 >&5
+  fi
+  rm -f conftest.er1 conftest.err
+  $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+  test $ac_status = 0
+done
+cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+int
+main ()
+{
+  return 0;
+}
+_ACEOF
+ac_clean_files_save=$ac_clean_files
+ac_clean_files="$ac_clean_files a.out a.out.dSYM a.exe b.out"
+ac_link_default=$($as_echo "$ac_link" | sed 's/ -o *conftest[^ ]*//')
+ac_files="a.out conftest.exe conftest a.exe a_out.exe b.out conftest.*"
+ac_try="$ac_link_default"
+case "$ac_try" in
+  *\"* | *\`* | *\\*)
+    ac_try_echo=\$ac_try
+    ;;
+  *)
+    ac_try_echo=$ac_try
+    ;;
+esac
+eval ac_try_echo="\"\$as_me:${as_lineno-$LINENO}: $ac_try_echo\""
+$as_echo "$ac_try_echo" >&5
+(eval "$ac_link_default") 2>&5
+ac_status=$?
+$as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+if test $ac_status = 0; then
+  for ac_file in $ac_files ''
+  do
+    test -f "$ac_file" || continue
+    case $ac_file in
+      *.$ac_ext | *.xcoff | *.tds | *.d | *.pdb | *.xSYM | *.bb | *.bbg | *.map | *.inf | *.dSYM | *.o | *.obj )
+        ;;
+      [ab].out)
+        break
+        ;;
+      *.*)
+        if test "${ac_cv_exeext+set}" = set && test "$ac_cv_exeext" != no; then :
+        else
+          ac_cv_exeext=$(expr "$ac_file" : '[^.]*\(\..*\)')
+        fi
+        break
+        ;;
+      *)
+        break
+        ;;
+    esac
+  done
+  test "$ac_cv_exeext" = no && ac_cv_exeext=
+else
+  ac_file=''
+fi
+if test -z "$ac_file"; then :
+  $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+  $as_echo "no"
+  $as_echo "$as_me: failed program was:" >&5
+  sed 's/^/| /' conftest.$ac_ext >&5
+  $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
+  $as_echo "$as_me: error: in \`$ac_pwd':" >&2
+  for ac_file in $(ls $ac_pwd)
+  do
+    test "$ac_pwd/$ac_file" = "$ac_temp" && continue
+    rm -rf "$ac_pwd/$ac_file"
+  done
+  for ac_file in $(ls $ac_temp)
+  do
+    mv "$ac_temp/$ac_file" "$ac_pwd"
+  done
+  rmdir "$ac_temp"
+  as_fn_error 77 "C compiler cannot create executables
+See \`config.log' for more details" "$LINENO" 5
+else
+  $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
+  $as_echo "yes"
+fi
+$as_echo "$as_me:${as_lineno-$LINENO}: checking for C compiler default output file name" >&5
+$as_echo_n "checking for C compiler default output file name... "
+$as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_file" >&5
+$as_echo "$ac_file"
+for ac_file in $(ls $ac_pwd)
+do
+  test "$ac_pwd/$ac_file" = "$ac_temp" && continue
+  test "$ac_file" = "confdefs.h" && continue
+  test "$ac_file" = "conftest.$ac_ext" && continue
+  rm -rf "$ac_pwd/$ac_file"
+done
+ac_exeext=$ac_cv_exeext
+ac_clean_files=$ac_clean_files_save
+$as_echo "$as_me:${as_lineno-$LINENO}: checking for suffix of executables" >&5
+$as_echo_n "checking for suffix of executables... "
+ac_try="$ac_link"
+case "$ac_try" in
+  *\"* | *\`* | *\\*)
+    ac_try_echo=\$ac_try
+    ;;
+  *)
+    ac_try_echo=$ac_try
+    ;;
+esac
+eval ac_try_echo="\"\$as_me:${as_lineno-$LINENO}: $ac_try_echo\""
+$as_echo "$ac_try_echo" >&5
+(eval "$ac_link") 2>&5
+ac_status=$?
+$as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+if test $ac_status = 0; then
+  for ac_file in conftest.exe conftest conftest.*; do
+    test -f "$ac_file" || continue
+    case $ac_file in
+      *.$ac_ext | *.xcoff | *.tds | *.d | *.pdb | *.xSYM | *.bb | *.bbg | *.map | *.inf | *.dSYM | *.o | *.obj)
+        ;;
+      *.*) ac_cv_exeext=$(expr "$ac_file" : '[^.]*\(\..*\)')
+        break
+        ;;
+      *)
+        break
+        ;;
+    esac
+  done
+else
+  for ac_file in $(ls $ac_pwd)
+  do
+    test "$ac_pwd/$ac_file" = "$ac_temp" && continue
+    rm -rf "$ac_pwd/$ac_file"
+  done
+  for ac_file in $(ls $ac_temp)
+  do
+    mv "$ac_temp/$ac_file" "$ac_pwd"
+  done
+  rmdir "$ac_temp"
+  $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
+  $as_echo "$as_me: error: in \`$ac_pwd':" >&2
+  as_fn_error $? "cannot compute suffix of executables: cannot compile and link
+See \`config.log' for more details" "$LINENO" 5
+fi
+$as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_exeext" >&5
+$as_echo "$ac_cv_exeext"
+for ac_file in $(ls $ac_pwd)
+do
+  test "$ac_pwd/$ac_file" = "$ac_temp" && continue
+  test "$ac_file" = "confdefs.h" && continue
+  rm -rf "$ac_pwd/$ac_file"
+done
+EXEEXT=$ac_cv_exeext
+ac_exeext=$EXEEXT
+cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+#include <stdio.h>
+int
+main ()
+{
+FILE *f = fopen ("conftest.out", "w");
+ return ferror (f) || fclose (f) != 0;
+
+  ;
+  return 0;
+}
+_ACEOF
+ac_clean_files="$ac_clean_files conftest.out"
+$as_echo "$as_me:${as_lineno-$LINENO}: checking whether we are cross compiling" >&5
+$as_echo_n "checking whether we are cross compiling... "
+if test "$cross_compiling" != yes; then
+  ac_try="$ac_link"
+  case "$ac_try" in
+    *\"* | *\`* | *\\*)
+      ac_try_echo=\$ac_try
+      ;;
+    *)
+      ac_try_echo=$ac_try
+      ;;
+  esac
+  eval ac_try_echo="\"\$as_me:${as_lineno-$LINENO}: $ac_try_echo\""
+  $as_echo "$ac_try_echo" >&5
+  (eval "$ac_link") 2>&5
+  ac_status=$?
+  $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+  test $ac_status = 0
+  ac_try='./conftest$ac_cv_exeext'
+  case "$ac_try" in
+    *\"* | *\`* | *\\*)
+      ac_try_echo=\$ac_try
+      ;;
+    *)
+      ac_try_echo=$ac_try
+      ;;
+  esac
+  eval ac_try_echo="\"\$as_me:${as_lineno-$LINENO}: $ac_try_echo\""
+  $as_echo "$ac_try_echo" >&5
+  (eval "$ac_try") 2>&5
+  ac_status=$?
+  $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+  if test $ac_status = 0; then
+    cross_compiling=no
+  else
+    if test "$cross_compiling" = maybe; then
+      cross_compiling=yes
+    else
+      for ac_file in $(ls $ac_pwd)
+      do
+        test "$ac_pwd/$ac_file" = "$ac_temp" && continue
+        rm -rf "$ac_pwd/$ac_file"
+      done
+      for ac_file in $(ls $ac_temp)
+      do
+        mv "$ac_temp/$ac_file" "$ac_pwd"
+      done
+      rmdir "$ac_temp"
+      $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
+      $as_echo "$as_me: error: in \`$ac_pwd':" >&2
+      as_fn_error $? "cannot run C compiled programs.
+If you meant to cross compile, use \`--host'.
+See \`config.log' for more details" "$LINENO" 5
+    fi
+  fi
+fi
+$as_echo "$as_me:${as_lineno-$LINENO}: result: $cross_compiling" >&5
+$as_echo "$cross_compiling"
+for ac_file in $(ls $ac_pwd)
+do
+  test "$ac_pwd/$ac_file" = "$ac_temp" && continue
+  rm -rf "$ac_pwd/$ac_file"
+done
+for ac_file in $(ls $ac_temp)
+do
+  mv "$ac_temp/$ac_file" "$ac_pwd"
+done
+rmdir "$ac_temp"
+$as_echo "$as_me:${as_lineno-$LINENO}: checking whether to enable maintainer-specific portions of Makefiles" >&5
+$as_echo_n "checking whether to enable maintainer-specific portions of Makefiles... "
+if test "${enable_maintainer_mode+set}" = set; then :
+  enableval=$enable_maintainer_mode
+  USE_MAINTAINER_MODE=$enableval
+else
+  USE_MAINTAINER_MODE=no
+fi
+$as_echo "$as_me:${as_lineno-$LINENO}: result: $USE_MAINTAINER_MODE" >&5
+$as_echo "$USE_MAINTAINER_MODE"
+if test "$USE_MAINTAINER_MODE" = yes; then
+  MAINTAINER_MODE_TRUE=
+  MAINTAINER_MODE_FALSE='#'
+else
+  MAINTAINER_MODE_TRUE='#'
+  MAINTAINER_MODE_FALSE=
+fi
+MAINT=$MAINTAINER_MODE_TRUE
+: "${CONFIG_STATUS=./config.status}"
+ac_write_fail=0
+ac_clean_files_save=$ac_clean_files
+ac_clean_files="$ac_clean_files $CONFIG_STATUS"
+$as_echo "$as_me:${as_lineno-$LINENO}: creating $CONFIG_STATUS" >&5
+$as_echo "$as_me: creating $CONFIG_STATUS"
+as_write_fail=0
+#echo $srcdir
+set x $ac_option_args
+shift
+ac_option_args="$@"
+ac_option_args=0$(printf "%${#ac_option_args}s" | tr " " 0)
+ac_option_args=$(cat <<$ac_option_args | sed "s/\\\"/\\\\\"/g"
+$@
+$ac_option_args
+)
+ac_delim_num=${#SHELL}
+ac_delim=$(basename $CONFIG_STATUS)
+test ${#ac_delim} -gt $ac_delim_num && ac_delim_num=${#ac_delim}
+test ${#as_echo} -gt $ac_delim_num && ac_delim_num=${#as_echo}
+test ${#as_lineno} -gt $ac_delim_num && ac_delim_num=${#as_lineno}
+test ${#ac_option_args} -gt $ac_delim_num && ac_delim_num=${#ac_option_args}
+test ${#srcdir} -gt $ac_delim_num && ac_delim_num=${#srcdir}
+test ${#0} -gt $ac_delim_num && ac_delim_num=${#0}
+ac_delim=
+if test "$as_write_fail" -eq 0; then
+  for as_write_fail in $ac_subst_vars
+  do
+    if test "$as_write_fail" = "as_write_fail"; then
+      ac_delim="${ac_delim}s/@as_write_fail@/0/g
+"
+    else
+      ac_delim="${ac_delim}s/@$(a=0$(printf "%${#as_write_fail}s" | tr " " 0) && cat <<$a | sed "s/\\//\\\\\\//g
+s/\\$/\\\\\\$/g"
+$as_write_fail
+$a
+)@/"
+      if eval test "\${#$as_write_fail}" = 0; then
+        ac_delim="${ac_delim}/g
+"
+      else
+        ac_delim="${ac_delim}$(eval as_write_fail="\${$as_write_fail}" && a=0$(printf "%${#as_write_fail}s" | tr " " 0) && cat <<$a | sed "s/\\//\\\\\\//g
+s/\\$/\\\\\\$/g"
+$as_write_fail
+$a
+)/g
+"
+      fi
+    fi
+  done
+  as_write_fail=0
+else
+  for as_write_fail in $ac_subst_vars
+  do
+    if test "$as_write_fail" = "as_write_fail"; then
+      ac_delim="${ac_delim}s/@as_write_fail@/1/g
+"
+    else
+      ac_delim="${ac_delim}s/@$(a=0$(printf "%${#as_write_fail}s" | tr " " 0) && cat <<$a | sed "s/\\//\\\\\\//g
+s/\\$/\\\\\\$/g"
+$as_write_fail
+$a
+)@/"
+      if eval test "\${#$as_write_fail}" = 0; then
+        ac_delim="${ac_delim}/g
+"
+      else
+        ac_delim="${ac_delim}$(eval as_write_fail="\${$as_write_fail}" && a=0$(printf "%${#as_write_fail}s" | tr " " 0) && cat <<$a | sed "s/\\//\\\\\\//g
+s/\\$/\\\\\\$/g"
+$as_write_fail
+$a
+)/g
+"
+      fi
+    fi
+  done
+  as_write_fail=1
+fi
+test ${#ac_delim} -gt $ac_delim_num && ac_delim_num=${#ac_delim}
+as_echo=$(a=0$(printf "%${#as_echo}s" | tr " " 0) && cat <<$a | sed "s/\\\\/\\\\\\\\/g"
+$as_echo
+$a
+)
+as_echo_n=$(a=0$(printf "%${#as_echo_n}s" | tr " " 0) && cat <<$a | sed "s/\\\\/\\\\\\\\/g"
+$as_echo_n
+$a
+)
+ac_delim_num=0$(printf "%${ac_delim_num}s" | tr " " 0)
+cat >$CONFIG_STATUS <<$ac_delim_num || as_write_fail=1
+#!$SHELL
+as_fn_set_status ()
+{
+  return \$1
+}
+as_fn_error ()
+{
+  if test \$4; then
+    as_lineno=\${as_lineno-"\$3"} as_lineno_stack=as_lineno_stack=\$as_lineno_stack
+    $as_echo "$(basename $CONFIG_STATUS):\$\{as_lineno-\$LINENO\}: error: \$2" >&\$4
+  fi
+  $as_echo "$(basename $CONFIG_STATUS): error: \$2" >&2
+  if test "\$1" -eq 0; then
+    set +e
+    as_fn_set_status 1
+    exit 1
+  else
+    set +e
+    as_fn_set_status \$1
+    exit \$1
+  fi
+}
+debug=false
+ac_cs_recheck=false
+ac_cs_silent=false
+ac_need_defaults=:
+exec 5>>config.log
+for ac_option
+do
+  case \$ac_option in
+  -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
+    ac_cs_recheck=:
+    ;;
+  --version | --versio | --versi | --vers | --ver | --ve | --v | -V )
+    $as_echo "$(basename $CONFIG_STATUS)
+configured by $0
+  with options \" $ac_option_args\"
+"
+    exit
+    ;;
+  --config | --confi | --conf | --con | --co | --c )
+    $as_echo " $ac_option_args"
+    exit
+    ;;
+  --debug | --debu | --deb | --de | --d | -d)
+    debug=:
+    ;;
+  --file=* | --fil=* | --fi=* | --f=*)
+    case \$ac_option in
+      *=?*)
+        ac_optarg=\$(expr "X\$ac_option" : '[^=]*=\(.*\)')
+        ;;
+      *=)
+        ac_optarg=
+        ;;
+      *)
+        ac_optarg=yes
+        ;;
+    esac
+    case "\$ac_optarg" in
+      *\'*)
+        ac_optarg=\$($as_echo "\$ac_optarg" | sed "s/'/'\\\\\\\\''/g")
+        ;;
+      '')
+        as_fn_error \$? "missing file argument"
+        ;;
+    esac
+    CONFIG_FILES="\$CONFIG_FILES \"\$ac_optarg\""
+    ac_need_defaults=false
+    ;;
+  --he | --h |  --help | --hel | -h)
+    $as_echo "\\\`$(basename $CONFIG_STATUS)' instantiates files and other configuration actions
+from templates according to the current configuration. Unless the files
+and actions are specified as TAGs, all are instantiated by default.
+
+Usage: ./config.status [OPTION]... [TAG]...
+
+  -h, --help       print this help, then exit
+  -V, --version    print version number and configuration settings, then exit
+      --config     print configuration, then exit
+  -q, --quiet, --silent
+                   do not print progress messages
+  -d, --debug      don't remove temporary files
+      --recheck    update config.status by reconfiguring in the same conditions
+      --file=FILE[:TEMPLATE]
+                   instantiate the configuration file FILE
+
+Configuration files:
+ Makefile
+
+Report bugs to the package provider."
+    exit
+    ;;
+  -q | -quiet | --quiet | --quie | --qui | --qu | --q \
+  | -silent | --silent | --silen | --sile | --sil | --si | --s)
+    ac_cs_silent=:
+    ;;
+  -*)
+    as_fn_error \$? "unrecognized option: \\\`\$ac_option'
+Try \\\`\$0 --help' for more information."
+    ;;
+  Makefile)
+    CONFIG_FILES="\$CONFIG_FILES Makefile"
+    ac_need_defaults=false
+    ;;
+  *)
+    as_fn_error \$? "invalid argument: \\\`\$ac_option'" "\$LINENO" 5
+    ;;
+  esac
+done
+if \$ac_need_defaults; then
+  test "\${CONFIG_FILES+set}" = set || CONFIG_FILES=Makefile
+fi
+if \$ac_cs_recheck; then
+  set x /bin/sh "$0" $(printf "printf %%s \"%s\"" "$ac_option_args" | $SHELL) --no-create --no-recursion
+  shift
+  if \$ac_cs_silent; then :; else
+    $as_echo "running CONFIG_SHELL=/bin/sh\$(printf " \"%s\"" "\$@")"
+  fi
+  exec env CONFIG_SHELL=/bin/sh "\$@"
+  exit
+fi
+for ac_file in \$CONFIG_FILES
+do
+  ac_f=\$(printf "%s" "\$ac_file" | sed "s/^\"//
+                                         s/\"$//").in
+  case \$ac_f in
+  *)
+    test -f "\$ac_f" ||
+    test -f "$srcdir/\$ac_f" && ac_f="$srcdir/\$ac_f" ||
+    as_fn_error 1 "cannot find input file: \\\`\$ac_f'" "\$LINENO" 5
+    ;;
+  esac
+  if \$ac_cs_silent; then :; else
+    $as_echo "$(basename $CONFIG_STATUS):\${as_lineno-\$LINENO}: creating \$ac_file" >&5
+    $as_echo "$(basename $CONFIG_STATUS): creating \$ac_file"
+  fi
+sed "$ac_delim" "\$ac_f" >\$ac_file || as_fn_error \$? "could not create \$ac_file" "\$LINENO" 5
+done
+$ac_delim_num
+test $as_write_fail = 0 && chmod +x $CONFIG_STATUS || ac_write_fail=1
+case $ac_config_files in
+  *"
+"*)
+    set x $ac_config_files
+    shift
+    ac_config_files=$*
+    ;;
+esac
+ac_delim_num=$(echo "$ac_subst_vars" | grep -c '^')
+ac_delim='%!_!# '
+if test "$srcdir" = .; then
+  ac_vpsub='/^[	 ]*VPATH[	 ]*=[	 ]*/{
+           h
+           s///
+           s/^/:/
+           s/[	 ]*$/:/
+           s/:\$(srcdir):/:/g
+           s/:\${srcdir}:/:/g
+           s/:@srcdir@:/:/g
+           s/^:*//
+           s/:*$//
+           x
+           s/\(=[	 ]*\).*/\1/
+           G
+           s/\n//
+           s/^[^=]*=[	 ]*$//
+  }'
+fi
+ac_clean_files=$ac_clean_files_save
+test $ac_write_fail = 0 || as_fn_error $? "write failure creating $CONFIG_STATUS" "$LINENO" 5
+if test "$no_create" != yes; then
+  ac_cs_success=:
+  ac_config_status_args=
+  test "$silent" = yes && ac_config_status_args="$ac_config_status_args --quiet"
+  exec 5>&1
+  $SHELL $CONFIG_STATUS $ac_config_status_args || ac_cs_success=false
+  exec 5>>config.log
+  $ac_cs_success || as_fn_exit 1
+fi

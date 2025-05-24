@@ -1,0 +1,26 @@
+srcdir=@srcdir@
+VPATH=$(srcdir):bin
+
+prefix=@prefix@
+
+EXEEXT=@EXEEXT@
+
+CC=@CC@
+DEFS=@DEFS@
+CPPFLAGS=@CPPFLAGS@
+CFLAGS=@CFLAGS@
+LDFLAGS=@LDFLAGS@
+
+all: compile_a_g
+
+compile_a_g: bin bin/a-g-install-gcc-using-source$(EXEEXT)
+
+bin/a-g-install-gcc-using-source$(EXEEXT): source/main.c
+	$(CC) $(DEFS) $(CPPFLAGS) $(CFLAGS) $< -o $@ $(LDFLAGS)
+
+bin:
+	mkdir -p $@
+
+install:
+	test -z "$(prefix)/bin" || mkdir -p "$(prefix)/bin"
+	cp -R bin/* "$(prefix)/bin"
