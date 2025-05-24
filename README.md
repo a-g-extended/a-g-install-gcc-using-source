@@ -43,7 +43,7 @@ If the gcc is mingw and the sh command line environment supports the pacman comm
     cd a-g
     mkdir build
     cd build
-    ../configure
+    ../configure LDFLAGS=-lmingw32_extended
     make
     make install
     cd ../..
